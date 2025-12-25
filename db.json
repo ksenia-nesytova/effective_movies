@@ -1,0 +1,140 @@
+{
+  "movies": [
+    {
+      "id": "b8f1c3c4-6e8f-4c2a-9b91-1c9c7e9b2a01",
+      "title": "Stargate",
+      "year": 1994,
+      "director": "Roland Emmerich",
+      "cast": [
+        "Kurt Russell",
+        "James Spader",
+        "Jaye Davidson"
+      ],
+      "country": "USA",
+      "rating": 7.8,
+      "genres": [
+        "Science Fiction",
+        "Adventure"
+      ],
+      "description": "An ancient ring-shaped device is discovered, leading to a distant planet and a civilization enslaved by a powerful alien posing as a god.",
+      "coverImage": "https://placehold.co/300x450/000000/FFF?text=Stargate"
+    },
+    {
+      "id": "d1a7c2e9-1d4b-4d53-8d31-3b89e8a92f10",
+      "title": "Star Trek: The Motion Picture",
+      "year": 1979,
+      "director": "Robert Wise",
+      "cast": [
+        "William Shatner",
+        "Leonard Nimoy",
+        "DeForest Kelley"
+      ],
+      "country": "USA",
+      "rating": 6.4,
+      "genres": [
+        "Science Fiction",
+        "Drama"
+      ],
+      "description": "The crew of the USS Enterprise reunites to investigate a mysterious and powerful alien cloud threatening Earth.",
+      "coverImage": "https://placehold.co/300x450/000000/FFF?text=Star+Trek+TMP"
+    },
+    {
+      "id": "a3f92c11-9e61-4a6f-bc2e-7a4a8a1e8d42",
+      "title": "Star Trek II: The Wrath of Khan",
+      "year": 1982,
+      "director": "Nicholas Meyer",
+      "cast": [
+        "William Shatner",
+        "Leonard Nimoy",
+        "Ricardo Montalbán"
+      ],
+      "country": "USA",
+      "rating": 8.1,
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Adventure"
+      ],
+      "description": "Admiral Kirk faces his old nemesis Khan, who seeks revenge using a powerful terraforming device.",
+      "coverImage": "https://placehold.co/300x450/000000/FFF?text=Wrath+of+Khan"
+    },
+    {
+      "id": "e7c81c2a-5b7e-4e1d-a2a6-6f0c93a9e2a9",
+      "title": "Star Trek III: The Search for Spock",
+      "year": 1984,
+      "director": "Leonard Nimoy",
+      "cast": [
+        "William Shatner",
+        "Leonard Nimoy",
+        "DeForest Kelley"
+      ],
+      "country": "USA",
+      "rating": 6.6,
+      "genres": [
+        "Science Fiction",
+        "Adventure"
+      ],
+      "description": "Kirk and his crew defy Starfleet orders to return to the Genesis Planet and recover Spock.",
+      "coverImage": "https://placehold.co/300x450/000000/FFF?text=Search+for+Spock"
+    },
+    {
+      "id": "f9b4a6d2-4b9c-4d6a-9c4e-1e8a6c7d9b33",
+      "title": "Star Trek IV: The Voyage Home",
+      "year": 1986,
+      "director": "Leonard Nimoy",
+      "cast": [
+        "William Shatner",
+        "Leonard Nimoy",
+        "Catherine Hicks"
+      ],
+      "country": "USA",
+      "rating": 7.3,
+      "genres": [
+        "Science Fiction",
+        "Comedy",
+        "Adventure"
+      ],
+      "description": "The crew travels back in time to 20th-century Earth to save the future by rescuing humpback whales.",
+      "coverImage": "https://placehold.co/300x450/000000/FFF?text=Voyage+Home"
+    },
+    {
+      "id": "c4a9b2d1-2e5f-4a33-9a18-8e7b2c3d9f44",
+      "title": "Star Trek V: The Final Frontier",
+      "year": 1989,
+      "director": "William Shatner",
+      "cast": [
+        "William Shatner",
+        "Leonard Nimoy",
+        "DeForest Kelley"
+      ],
+      "country": "USA",
+      "rating": 5.5,
+      "genres": [
+        "Science Fiction",
+        "Adventure"
+      ],
+      "description": "The crew confronts a renegade Vulcan seeking God at the center of the galaxy.",
+      "coverImage": "https://placehold.co/300x450/000000/FFF?text=Final+Frontier"
+    },
+    {
+      "id": "a1d7e8c4-9b22-4c3f-8d91-2e7a9b3c5f55",
+      "title": "Star Trek VI: The Undiscovered Country",
+      "year": 1991,
+      "director": "Nicholas Meyer",
+      "cast": [
+        "William Shatner",
+        "Leonard Nimoy",
+        "Christopher Plummer"
+      ],
+      "country": "USA",
+      "rating": 7.9,
+      "genres": [
+        "Science Fiction",
+        "Thriller",
+        "Drama"
+      ],
+      "description": "Political intrigue and conspiracy threaten peace between the Federation and the Klingon Empire.",
+      "coverImage": "https://placehold.co/300x450/000000/FFF?text=Undiscovered+Country"
+    }
+  ]
+}
