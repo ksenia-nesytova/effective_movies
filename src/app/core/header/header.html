@@ -4,5 +4,8 @@
         <a [routerLink]="['/']" class="logo">
             EffectiveMovies
         </a>
+
     </div>
+    <app-movie-search (onSearch)="onSearch($event)" />
+
 </header>
