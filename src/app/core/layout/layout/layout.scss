@@ -1,10 +1,16 @@
+@use 'shared' as *;
+
 .layout {
-    height: 100vh;
-    overflow: none;
+    min-height: 100vh;
 
     #main {
-        padding: 12px 16px;
-        overflow-y: auto;
+        padding: $space-m $space-l;
         background: var(--color-surface);
     }
+
+    #content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
 }
