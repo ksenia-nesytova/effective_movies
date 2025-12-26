@@ -1,13 +1,15 @@
 @use 'shared' as *;
 
+
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
-    height: 50px;
-
-    padding: 0 $space-l;
+    height: 56px;
 
     background: var(--color-surface);
     border-bottom: 3px solid var(--color-primary);
@@ -15,6 +17,15 @@
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--color-primary);
+
+    &__content {
+        display: flex;
+        align-items: center;
+        max-width: 1200px;
+
+        padding: 0 $space-l;
+    }
+
 }
 
 .logo {
