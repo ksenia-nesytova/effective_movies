@@ -4,40 +4,45 @@
 @use 'styles/theme' as *;
 
 body {
-    background-color: var(--color-bg);
-    color: var(--color-text);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
 }
 
 h1 {
-    @include em-heading(1);
+  @include em-heading(1);
 }
 
 h2 {
-    @include em-heading(2);
+  @include em-heading(2);
 }
 
 h3 {
-    @include em-heading(3);
+  @include em-heading(3);
 }
 
 a {
-    color: var(--color-primary);
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s ease;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
 
-    &:hover {
-        color: var(--color-secondary);
-        text-decoration: underline;
-    }
+  &:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+  }
 
-    &:active {
-        color: var(--color-accent);
-    }
+  &:active {
+    color: var(--color-accent);
+  }
+}
+
+input,
+select {
+  @include em-input;
 }
 
 .pointer {
-    cursor: pointer;
+  cursor: pointer;
 }

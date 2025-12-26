@@ -37,3 +37,36 @@ $space-xl: $base-space * 8; // 2rem = 32px
     color: var(--color-text);
   }
 }
+
+@mixin em-input() {
+  width: 100%;
+  font-size: inherit;
+  font-family: inherit;
+
+  border: 1.5px solid var(--color-border);
+  border-radius: 6px;
+
+  background-color: var(--color-surface);
+  color: var(--color-text);
+
+  padding: 0.4rem 0.6rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    border-color: var(--color-secondary);
+  }
+
+  &:focus {
+    border-color: var(--color-accent);
+    outline: none;
+    box-shadow: 0 0 4px rgba(39, 103, 73, 0.4);
+    transform: scale(1.02);
+  }
+
+  &::placeholder {
+    color: var(--color-text-muted);
+    opacity: 0.7;
+  }
+
+  height: 32px;
+}
