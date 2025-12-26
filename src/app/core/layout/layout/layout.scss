@@ -1,0 +1,10 @@
+.layout {
+    height: 100vh;
+    overflow: none;
+
+    #main {
+        padding: 12px 16px;
+        overflow-y: auto;
+        background: var(--color-surface);
+    }
+}
