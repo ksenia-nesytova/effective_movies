@@ -1,0 +1,39 @@
+/** Font Size **/
+$font-xs: 0.85rem; // ~13.6px
+$font-s: 1rem; // 16px
+$font-m: 1.2rem; // 19.2px
+$font-l: 1.5rem; // 24px
+$font-xl: 2rem; // 32px
+
+/** Margin & Padding Size **/
+$base-space: 0.25rem; // 4px
+$space-xxs: $base-space; // 0.25rem = 4px
+$space-xs: $base-space * 2; // 0.5rem = 8px
+$space-s: $base-space * 3; // 0.75rem = 12px
+$space-m: $base-space * 4; // 1rem = 16px
+$space-l: $base-space * 6; // 1.5rem = 24px
+$space-xl: $base-space * 8; // 2rem = 32px
+
+@mixin em-heading($level) {
+  font-weight: 600;
+
+  @if $level ==1 {
+    font-size: $font-xl;
+    color: var(--color-primary);
+  }
+
+  @else if $level ==2 {
+    font-size: $font-l;
+    color: var(--color-primary);
+  }
+
+  @else if $level ==3 {
+    font-size: $font-m;
+    color: var(--color-primary);
+  }
+
+  @else {
+    font-size: $font-s;
+    color: var(--color-text);
+  }
+}
