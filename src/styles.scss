@@ -1,2 +1,43 @@
 @use 'styles/normalize';
 @use 'styles/reset';
+@use 'styles/shared' as *;
+@use 'styles/theme' as *;
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    @include em-heading(1);
+}
+
+h2 {
+    @include em-heading(2);
+}
+
+h3 {
+    @include em-heading(3);
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+
+    &:hover {
+        color: var(--color-secondary);
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: var(--color-accent);
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
