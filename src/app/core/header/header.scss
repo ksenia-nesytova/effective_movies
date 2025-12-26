@@ -1,0 +1,23 @@
+@use 'shared' as *;
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 50px;
+
+    padding: 0 $space-l;
+
+    background: var(--color-surface);
+    border-bottom: 3px solid var(--color-primary);
+
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
