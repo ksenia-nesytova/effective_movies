@@ -1,21 +1,19 @@
 <section class="movie-list">
 
-    @if (isLoading() && !isFailed()) {
+    @if (isLoading()) {
     <mat-spinner diameter="50" strokeWidth="5" />
-    } @else {
-    @if (isFailed()) {
+    } @else if (isFailed()) {
     <div class="movie-list__text-wrapper">
         <p class="movie-list__text">Failed to load movies</p>
         <button (click)="loadMovies()" class="movie-list__btn" [disabled]="isLoading()">Try again</button>
-    </div>
-    } @else {
+    </div> }
+    @else {
     @for(movie of filteredMovies(); track movie.id) {
     <app-movie-card [movie]="movie" />
     } @empty {
     <div class="movie-list__text-wrapper">
         <p class="movie-list__text">No movies found</p>
     </div>
-    }
     }
     }
 </section>
