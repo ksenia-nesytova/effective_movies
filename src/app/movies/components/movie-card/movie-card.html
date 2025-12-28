@@ -1,0 +1,8 @@
+<article class="card pointer" (click)="showDetails()">
+    <img class="card__cover" [ngSrc]="coverImage()" width="400" height="200" alt="Movie Cover Image" placeholder="blur">
+
+    <section class="card__content">
+        <h3 class="card__title">{{ movie()?.title }}</h3>
+        <p class="card__year">{{ movie()?.year }}</p>
+    </section>
+</article>
