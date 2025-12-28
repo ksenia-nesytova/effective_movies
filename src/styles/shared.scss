@@ -20,6 +20,7 @@ $space-xl: $base-space * 8; // 2rem = 32px
   @if $level ==1 {
     font-size: $font-xl;
     color: var(--color-primary);
+    margin: 0;
   }
 
   @else if $level ==2 {
