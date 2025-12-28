@@ -70,3 +70,46 @@ $space-xl: $base-space * 8; // 2rem = 32px
 
   height: 32px;
 }
+
+@mixin em-btn() {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  text-align: center;
+
+  height: 40px;
+  padding: 0 16px;
+  font-size: 0.95rem;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  @include em-btn-type();
+
+}
+
+@mixin em-btn-type($type: primary) {
+  @if $type ==primary {
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+
+    &:hover {
+      background-color: var(--color-accent);
+      box-shadow: var(--shadow-sm);
+    }
+
+    &:active {
+      background-color: var(--color-secondary);
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
