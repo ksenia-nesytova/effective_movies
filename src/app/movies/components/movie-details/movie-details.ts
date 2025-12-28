@@ -3,14 +3,14 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
 import { Movie } from '@app/movies/models/movie';
 import { Movies } from '@app/movies/services/movies';
-import { MatProgressSpinner } from "@angular/material/progress-spinner";
 import { NgOptimizedImage } from "@angular/common";
+import { Loader } from "@app/shared/components/loader/loader";
 
 const DEFAULT_IMAGE = 'assets/movies/USS_Enterprise.png';
 
 @Component({
   selector: 'app-movie-details',
-  imports: [MatProgressSpinner, NgOptimizedImage],
+  imports: [NgOptimizedImage, Loader],
   templateUrl: './movie-details.html',
   styleUrl: './movie-details.scss',
 })
