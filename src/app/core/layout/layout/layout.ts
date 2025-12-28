@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Header } from "@app/core/header/header";
+import { Header } from "@app/core/layout/header/header";
 
 @Component({
   selector: 'app-layout',
