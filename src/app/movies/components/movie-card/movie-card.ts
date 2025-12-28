@@ -1,4 +1,4 @@
-import { Component, inject, input, InputSignal, OnInit, signal, WritableSignal } from '@angular/core';
+import { Component, computed, inject, input, InputSignal, } from '@angular/core';
 import { Movie } from '@app/movies/models/movie';
 import { NgOptimizedImage } from "@angular/common";
 import { Router } from '@angular/router';
@@ -11,19 +11,13 @@ const DEFAULT_IMAGE = 'assets/movies/USS_Enterprise.png';
   templateUrl: './movie-card.html',
   styleUrl: './movie-card.scss',
 })
-export class MovieCard implements OnInit {
+export class MovieCard {
   private readonly router = inject(Router);
 
   public movie: InputSignal<Movie | null> = input<Movie | null>(null);
-  protected coverImage: WritableSignal<string> = signal(DEFAULT_IMAGE);
-
-  ngOnInit() {
-    this.coverImage.set(this.getCoverImage());
-  }
-
-  private getCoverImage(): string {
-    return this.movie()?.coverImage || DEFAULT_IMAGE;
-  }
+  protected coverImage = computed(() =>
+    this.movie()?.coverImage ?? DEFAULT_IMAGE
+  );
 
   protected showDetails(): void {
     const id = this.movie()?.id;
