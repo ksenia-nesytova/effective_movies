@@ -2,6 +2,12 @@
 @use 'styles/reset';
 @use 'styles/shared' as *;
 @use 'styles/theme' as *;
+@use '@angular/material' as mat;
+
+:root {
+  @include mat.progress-spinner-overrides((active-indicator-color: var(--color-secondary),
+    ));
+}
 
 body {
   background-color: var(--color-bg);
@@ -45,4 +51,14 @@ select {
 
 .pointer {
   cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
