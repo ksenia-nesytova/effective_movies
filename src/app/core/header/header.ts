@@ -1,4 +1,4 @@
-import { Component, inject, output } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Search } from '@app/movies/components/movie-search/search';
 import { MovieSearch } from "@app/movies/components/movie-search/movie-search";
