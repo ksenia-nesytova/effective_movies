@@ -21,7 +21,7 @@ export class MovieCard implements OnInit {
     this.coverImage.set(this.getCoverImage());
   }
 
-  protected getCoverImage(): string {
+  private getCoverImage(): string {
     return this.movie()?.coverImage || DEFAULT_IMAGE;
   }
 
