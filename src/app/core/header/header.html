@@ -1,11 +1,10 @@
 <header class="header">
-
     <div class="header__content">
         <a [routerLink]="['/']" class="logo">
-            EffectiveMovies
+            <span class="logo_full">EffectiveMovies</span>
+            <span class="logo_short">EM</span>
         </a>
 
+        <app-movie-search (onSearch)="onSearch($event)" />
     </div>
-    <app-movie-search (onSearch)="onSearch($event)" />
-
 </header>
