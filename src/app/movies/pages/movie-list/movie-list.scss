@@ -1,0 +1,25 @@
+@use 'shared' as *;
+
+.movie-list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+    &__text {
+        @include em-heading(3);
+        text-align: center;
+    }
+
+    &__text-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        padding: $space-m $space-l;
+    }
+
+    &__btn {
+        @include em-btn();
+    }
+}
