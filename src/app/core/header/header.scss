@@ -1,6 +1,5 @@
 @use 'shared' as *;
 
-
 .header {
     position: sticky;
     top: 0;
@@ -14,21 +13,24 @@
     background: var(--color-surface);
     border-bottom: 3px solid var(--color-primary);
 
-    font-size: 1.3rem;
+    font-size: $font-l;
     font-weight: 700;
     color: var(--color-primary);
 
     &__content {
         display: flex;
         align-items: center;
+        gap: $space-l;
+
         max-width: 1200px;
 
         padding: 0 $space-l;
     }
-
 }
 
 .logo {
-    font-size: 1.3rem;
+    font-size: $font-l;
     font-weight: 700;
+    color: var(--color-secondary);
+
 }
