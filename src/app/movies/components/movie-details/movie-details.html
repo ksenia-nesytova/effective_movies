@@ -1,0 +1,47 @@
+<section class="details">
+    @if (isLoading()) {
+    <mat-spinner diameter="50" strokeWidth="5" />
+    } @else if(isFailed()) {
+    <div class="details__text-wrapper">
+        <p class="details__text">Failed to load movie</p>
+    </div>
+    } @else {
+    <article class="details__card">
+        <img class="details__cover" [ngSrc]="coverImage()" width="300" height="450" alt="Movie Cover Image"
+            placeholder="blur">
+
+        <div class="details__content">
+            <section>
+                <h1>{{ movie()?.title }}</h1>
+                <p class="details__year">{{ movie()?.year }} | {{ movie()?.country }}</p>
+            </section>
+
+            <ul class="details__list details__list_tag">
+                @for (tag of movie()?.genres; track $index) {
+                <li class="details__tag">{{ tag }}</li>
+                }
+            </ul>
+            <section>
+                <h2>Description</h2>
+                <p>{{ movie()?.description }}</p>
+            </section>
+
+            <section>
+                <h2>Details</h2>
+                <ul class="details__list">
+                    <li>
+                        <span class="details__label">Director:</span> {{ movie()?.director }}
+                    </li>
+                    <li>
+                        <span class="details__label">Rating:</span> {{ movie()?.rating }}
+                    </li>
+
+                    <li>
+                        <span class="details__label">Cast:</span> {{ movie()?.cast?.join(', ') }}
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </article>
+    }
+</section>
