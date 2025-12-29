@@ -40,8 +40,8 @@ _**Event Propagataion**_ состоит из **3 основных фаз**:
 ```
 
 ```javascript
-@ViewChild('container', { static: true })
-container: ElementRef<HTMLElement>;
+@ViewChild('parent', { static: true })
+parent: ElementRef<HTMLElement>;
 
 ngOnInit() {
 // Обработчик клика с capture: true
